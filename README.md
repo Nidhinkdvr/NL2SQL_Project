@@ -50,41 +50,62 @@ The model performed poorly in terms of execution accuracy due to incorrect SQL s
 
 Test Case 1
 NL Query: Show me all employees in Engineering department.
+
 Predicted SQL: SELECT employees FROM table_name_65 WHERE department = "ingénience"
+
 Actual SQL: SELECT * FROM employees WHERE department = 'Engineering';
+
 Exact Match: 62.90%
+
 Execution Match: 0.00%
 
 Test Case 2
 NL Query: List employees with salary greater than 70000.
+
 Predicted SQL: SELECT employees FROM table_name_65 WHERE salary > 70000
+
 Actual SQL: SELECT * FROM employees WHERE salary > 70000;
+
 Exact Match: 73.27%
+
 Execution Match: 0.00%
 
 Test Case 3
 NL Query: How many employees are in HR?
+
 Predicted SQL: SELECT COUNT() FROM HR
+
 Actual SQL: SELECT COUNT(*) FROM employees WHERE department = 'HR';
+
 Exact Match: 58.97%
+
 Execution Match: 0.00%
 
 Test Case 4
 NL Query: Find employees in Marketing with salary less than 60000.
+
 Predicted SQL: SELECT marketing_team FROM table_name_55 WHERE salary 60000
+
 Actual SQL: SELECT * FROM employees WHERE department = 'Marketing' AND salary < 60000;
+
 Exact Match: 49.25%
+
 Execution Match: 0.00%
 
 Test Case 5
 NL Query: Get the names of employees earning exactly 52000.
+
 Predicted SQL: SELECT employees_name FROM employees AS a number_ FROM employees AS numbers___numbers FROM employees AS numbers__numbers = "52000"
+
 Actual SQL: SELECT name FROM employees WHERE salary = 52000;
+
 Exact Match: 45.65%
+
 Execution Match: 0.00%
 
 Summary
 Average Exact Match Accuracy: 58.41%
+
 Average Execution Match Accuracy: 0.00%
 
 
