@@ -1,10 +1,6 @@
 # NL2SQL_Project
 
 
-# Overview
-This project is part of the internship evaluation for the Junior Data Scientist / Gen AI Intern position at CAS. The objective is to implement an NL2SQL system that converts natural language queries into SQL statements using a pre-trained model.
-
-
 # Objective
 Convert natural language (NL) questions into valid SQL queries and evaluate the model’s performance using:
 1.Exact Match Accuracy
